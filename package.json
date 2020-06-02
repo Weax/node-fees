@@ -1,0 +1,27 @@
+{
+  "name": "fees",
+  "version": "1.0.0",
+  "description": "A Node console app for commission fees calculation",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "npm run test -- --watch"
+  },
+  "bin": {
+    "fees": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weax/node-fees.git"
+  },
+  "author": "Weax <weaxdesign@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Weax/node-fees/issues"
+  },
+  "homepage": "https://github.com/Weax/node-fees#readme",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "mock-fs": "^4.12.0"
+  }
+}
