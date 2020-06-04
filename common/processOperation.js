@@ -31,9 +31,9 @@ const calculate = (obj, fees) => {
       amount =
         weekSum < week_limit
           ? 0
-          : weekSum > amount
+          : weekSum > amount + week_limit
           ? amount
-          : amount - week_limit;
+          : weekSum - week_limit;
 
     } else if (obj.user_type === "juridical") {
       feeValue = feesCashOutLegal.percents;
