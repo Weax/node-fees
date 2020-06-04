@@ -24,6 +24,7 @@ const calculate = (obj, fees) => {
       week_limit = feesCashOutNatural.week_limit.amount;
 
       const week = moment(obj.date).isoWeek();
+
       saveUserCashOutByWeek(obj.user_id, week, amount);
       const weekSum = getUserCashOutByWeek(obj.user_id, week);
 
