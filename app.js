@@ -1,12 +1,12 @@
-const { getFilePathFromArgv, readFileAsync, removeTrailingCommaJson: jsonFix, roundResult } = require("./lib/utils");
+const { getFilePathFromArgv, readFileAsync, roundResult } = require("./lib/utils");
 const getFees = require("./common/getFeesFromApi");
-const calculate = require("./common/processOperation");
+const calculate = require("./common/calculate");
 
 (async () => {
   try {
     //read input.json
     const data = await readFileAsync(getFilePathFromArgv());
-    const dataJson = JSON.parse(jsonFix(data));
+    const dataJson = JSON.parse(data);
 
     //get Commission Fees from API
     const fees = await getFees();

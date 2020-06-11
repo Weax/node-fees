@@ -1,6 +1,7 @@
 # Commission Fees Calculator
 Node console app for calculating Cash In and Cash Out fees<br />
 Two dependencies: axios and moment.js<br />
+100% test coverage<br />
 
 ## Available Scripts
 
@@ -17,6 +18,6 @@ node app.js input.json
 ### `npm test`
 Runs app tests implemented using Jest.<br />
 
-### `npm test:watch`
+### `npm run test:watch`
 
 Launches the test runner in the interactive watch mode.<br />
